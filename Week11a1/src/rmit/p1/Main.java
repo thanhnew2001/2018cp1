@@ -8,8 +8,10 @@ public class Main {
 //        house.decorate();
 
         Decorator decorator = new PaintDecorator(new House());
-
         decorator.decorate();
+
+        Decorator carDecorator = new PaintCarDecorator(new Car());
+        carDecorator.decorate();
 
     }
 }
