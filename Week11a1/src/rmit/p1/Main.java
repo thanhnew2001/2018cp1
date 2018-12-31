@@ -7,7 +7,7 @@ public class Main {
 //        House house = new House();
 //        house.decorate();
 
-        Decorator decorator = new PaintDecorator(new House());
+        Decorator decorator = new PaintDecorator(new LightDecorator(new House()));
         decorator.decorate();
 
         Decorator carDecorator = new PaintCarDecorator(new Car());
